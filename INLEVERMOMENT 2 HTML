@@ -1,0 +1,27 @@
+document.getElementById('flightSearchForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Voorkom dat de pagina opnieuw laadt
+
+    const departure = document.getElementById('departure').value;
+    const destination = document.getElementById('destination').value;
+    const date = document.getElementById('date').value;
+
+    // Fictieve gegevens voor vluchten (je kunt hier later een API gebruiken)
+    const flights = [
+        { flight: 'Amsterdam → Parijs', price: '€120', date: date },
+        { flight: 'Amsterdam → Londen', price: '€150', date: date },
+        { flight: 'Amsterdam → Barcelona', price: '€180', date: date }
+    ];
+
+    // Laat de resultaten zien
+    const resultsSection = document.getElementById('resultsSection');
+    resultsSection.style.display = 'block';
+
+    const flightResults = document.getElementById('flightResults');
+    flightResults.innerHTML = '';
+
+    flights.forEach(flight => {
+        const li = document.createElement('li');
+        li.innerHTML = `${flight.flight} - ${flight.price} - Vertrek: ${flight.date}`;
+        flightResults.appendChild(li);
+    });
+});
