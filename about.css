@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Century;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+.title{
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+.about{
+    width: 100%;
+    padding: 78px 0;
+    background-color: #5d87d3;
+
+}
+
+.about img{
+    height: 300px;
+    max-width: 100%;
+    width: 420px;
+}
+
+.about-text{
+    width: 100%;
+    max-width: 550px;
+}
+
+.main{
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+button{
+    background: #70d4e1;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover{
+    background: transparent;
+    border: solid #70d4e1;
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+    border: 2px solid white;
+}
